@@ -1,0 +1,28 @@
+{
+    "courses": [
+      {
+        "id": "1",
+        "name": "Introduction to Web Development",
+        "students": [
+          {"id": "s1", "name": "Alice Johnson"},
+          {"id": "s2", "name": "Bob Smith"}
+        ],
+        "topics": [
+          {"id": "t1", "name": "HTML Basics", "links": ["https://example.com/html"]},
+          {"id": "t2", "name": "CSS Fundamentals", "links": ["https://example.com/css"]}
+        ],
+        "schedule": {
+          "startDate": "2024-08-15",
+          "endDate": "2024-12-15",
+          "days": ["Monday", "Wednesday"],
+          "time": "18:00-20:00"
+        },
+        "attendance": [
+          {
+            "date": "2024-08-15",
+            "presentStudents": ["s1", "s2"]
+          }
+        ]
+      }
+    ]
+  }
