@@ -20,7 +20,7 @@ interface ClassData {
 }
 
 
-export default function page({}: Props) {
+export default function Page({}: Props) {
   const [isDialogOpen, setIsDialogOpen] = useState(false)
   const [refreshKey, setRefreshKey] = useState(0);
 
