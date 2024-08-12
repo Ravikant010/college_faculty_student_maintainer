@@ -1,49 +1,32 @@
-// app/courses/page.jsx
-"use client"
+// app/components/CourseList.tsx
+import { useEffect, useState } from 'react';
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Course } from '@/type';
 
-import { useState } from "react"
-import { CircularButton } from "@/components/CircleButton"
-import { CourseList } from "@/components/CourseList"
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Button } from "@/components/ui/button"
+export function CourseList() {
+  const [courses, setCourses] = useState<Course[]>([]);
 
-export default function CoursesPage() {
-  const [isDialogOpen, setIsDialogOpen] = useState(false)
-
-  const handleAddCourse = (event) => {
-    event.preventDefault()
-    // Add logic to save the new course
-    setIsDialogOpen(false)
-  }
+  useEffect(() => {
+    fetch('/api/courses')
+      .then(response => response.json())
+      .then((data: Course[]) => setCourses(data))
+      .catch(error => console.error('Error fetching courses:', error));
+  }, []);
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Courses</h1>
-      <CourseList />
-      
-      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogTrigger asChild>
-          <CircularButton onClick={() => setIsDialogOpen(true)} />
-        </DialogTrigger>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Add New Course</DialogTitle>
-          </DialogHeader>
-          <form onSubmit={handleAddCourse} className="space-y-4">
-            <div>
-              <Label htmlFor="courseName">Course Name</Label>
-              <Input id="courseName" placeholder="Enter course name" />
-            </div>
-            <div>
-              <Label htmlFor="courseDescription">Description</Label>
-              <Input id="courseDescription" placeholder="Enter course description" />
-            </div>
-            <Button type="submit">Add Course</Button>
-          </form>
-        </DialogContent>
-      </Dialog>
+    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {courses.map(course => (
+        <Card key={course.id}>
+          <CardHeader>
+            <CardTitle>{course.name}</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p>Students: {course.students.length}</p>
+            <p>Topics: {course.topics.length}</p>
+            <p>Schedule: {course.schedule.days.join(', ')} at {course.schedule.time}</p>
+          </CardContent>
+        </Card>
+      ))}
     </div>
-  )
+  );
 }

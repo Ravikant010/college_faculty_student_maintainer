@@ -1,28 +1,184 @@
 {
-    "courses": [
-      {
-        "id": "1",
-        "name": "Introduction to Web Development",
-        "students": [
-          {"id": "s1", "name": "Alice Johnson"},
-          {"id": "s2", "name": "Bob Smith"}
-        ],
-        "topics": [
-          {"id": "t1", "name": "HTML Basics", "links": ["https://example.com/html"]},
-          {"id": "t2", "name": "CSS Fundamentals", "links": ["https://example.com/css"]}
-        ],
-        "schedule": {
-          "startDate": "2024-08-15",
-          "endDate": "2024-12-15",
-          "days": ["Monday", "Wednesday"],
-          "time": "18:00-20:00"
+  "courses": [
+    {
+      "name": "python (mon to Thur)",
+      "students": [
+        {
+          "id": "s1",
+          "name": "shubham rawat"
         },
-        "attendance": [
-          {
-            "date": "2024-08-15",
-            "presentStudents": ["s1", "s2"]
-          }
-        ]
-      }
-    ]
-  }
+        {
+          "id": "s2",
+          "name": "abhishek"
+        }
+      ],
+      "topics": [
+        {
+          "id": "topic-1723489065860-un5di1rfp",
+          "name": [
+            "python match case, switch , practical"
+          ],
+          "links": [
+            "zoom link\nhttps://us06web.zoom.us/j/81150015986?pwd=bav7vzBh6yTWMU1iLBH5hbsfsgc7kn.1\n\nrecording link\nhttps://www.transfernow.net/dl/20240812Ff6XhLDw"
+          ]
+        }
+      ],
+      "schedule": {
+        "startDate": "2024-07-28",
+        "endDate": "2024-12-31",
+        "days": [],
+        "time": "10:00:11:00"
+      },
+      "attendance": [
+        {
+          "date": "2024-08-13",
+          "presentStudents": [
+            "abhishek"
+          ]
+        }
+      ],
+      "id": "1723488799660"
+    },
+    {
+      "name": "python (mon to Thur)",
+      "students": [
+        {
+          "id": "s1",
+          "name": "ankul"
+        },
+        {
+          "id": "s2",
+          "name": "nikhil"
+        },
+        {
+          "id": "s3",
+          "name": "omari"
+        },
+        {
+          "id": "s4",
+          "name": "jai rajputana"
+        }
+      ],
+      "topics": [
+        {
+          "id": "topic-1723489498741-6tdbpq0kq",
+          "name": [
+            "conditional staments and logical operators, practical question solve"
+          ],
+          "links": [
+            "code_link \n https://email.codesandbox.io/c/eJykzMFu6yAQheGnMZurRAyQgBcssslrWAMM8eja2MLESfv0VdVsqq6qbo_-8yXvgjYZBHmwShvXm7MTo5fOIhAllBDPTp-yzsli3ztUCBGDYK-kMtKBgl4a5Y4qJwcWLIaUU9amMzIuiTYsKSzPIy-Cy86Nhnud_NjaunX60qlrp67fu05dt89xop3qYcbng6bpsNlpzTfxh2vhSAPe27hUfsfGSxke3MYBa-M4kd-ZHl_RCxwKzuTXtzYu5R9Apy9aiupXalRXrP-p4kiVOiNvM_J0jMssKkVemUobOPlzDOikM0mjsoSorXURQgAb1OnkIMcoiciKjUqin_Jr_xW1e_URAAD__4Wamwg"
+          ]
+        }
+      ],
+      "schedule": {
+        "startDate": "2024-08-01",
+        "endDate": "2025-01-01",
+        "days": [],
+        "time": "11:30:12:30"
+      },
+      "attendance": [
+        {
+          "date": "2024-08-13",
+          "presentStudents": [
+            "nikhil",
+            "ankul"
+          ]
+        }
+      ],
+      "id": "1723489318250"
+    },
+    {
+      "name": "python fast track (all day except friday)",
+      "students": [
+        {
+          "id": "s1",
+          "name": "jaysal"
+        }
+      ],
+      "topics": [
+        {
+          "id": "topic-1723489908930-3aa0eewpx",
+          "name": [
+            "classes in python, methods, instances, inheritance, base class, derived class, class specifiers"
+          ],
+          "links": [
+            "no link he has code \n "
+          ]
+        }
+      ],
+      "schedule": {
+        "startDate": "2024-08-01",
+        "endDate": "2025-01-01",
+        "days": [],
+        "time": "12:30:2:00"
+      },
+      "attendance": [
+        {
+          "date": "2024-08-13",
+          "presentStudents": [
+            "jaysal"
+          ]
+        }
+      ],
+      "id": "1723489805872"
+    },
+    {
+      "name": "HTML-CSS (weekend) ",
+      "students": [
+        {
+          "id": "s1",
+          "name": ""
+        },
+        {
+          "id": "s2",
+          "name": ""
+        }
+      ],
+      "topics": [],
+      "schedule": {
+        "startDate": "2024-05-04",
+        "endDate": "2024-12-01",
+        "days": [],
+        "time": "10:00 :11:00"
+      },
+      "attendance": [],
+      "id": "1723490134945"
+    },
+    {
+      "name": "React (Weekend)",
+      "students": [
+        {
+          "id": "s1",
+          "name": "sherina"
+        }
+      ],
+      "topics": [],
+      "schedule": {
+        "startDate": "2024-05-05",
+        "endDate": "2024-12-05",
+        "days": [],
+        "time": "11:30:12:30"
+      },
+      "attendance": [],
+      "id": "1723490369985"
+    },
+    {
+      "name": "javascript (weekend)",
+      "students": [
+        {
+          "id": "s1",
+          "name": ""
+        }
+      ],
+      "topics": [],
+      "schedule": {
+        "startDate": "2024-06-06",
+        "endDate": "2024-12-05",
+        "days": [],
+        "time": "3:00:4:00"
+      },
+      "attendance": [],
+      "id": "1723490820261"
+    }
+  ]
+}

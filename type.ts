@@ -1,4 +1,4 @@
-// types/course.ts
+// app/types.ts
 
 export interface Student {
     id: string;
@@ -7,7 +7,7 @@ export interface Student {
   
   export interface Topic {
     id: string;
-    name: string;
+    name: string[];
     links: string[];
   }
   
@@ -29,4 +29,9 @@ export interface Student {
     students: Student[];
     topics: Topic[];
     schedule: Schedule;
+    attendance: AttendanceRecord[];
+  }
+  
+  export interface CoursesData {
+    courses: Course[];
   }

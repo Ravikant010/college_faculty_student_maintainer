@@ -1,23 +1,32 @@
+// app/api/courses/route.ts
 import { promises as fs } from 'fs';
-import { NextRequest } from 'next/server';
 import path from 'path';
+import { Course, CoursesData } from '@/type';
 
-const dataFilePath = path.join(process.cwd(), 'public', 'data', 'courses.json');
+const dataFilePath = path.join(process.cwd(), 'public', 'courses.json');
 
-export async function GET() {
+export async function GET(): Promise<Response> {
   const fileContents = await fs.readFile(dataFilePath, 'utf8');
-  const data = JSON.parse(fileContents);
+  const data: CoursesData = JSON.parse(fileContents);
   return Response.json(data.courses);
 }
 
-export async function POST(request:NextRequest) {
-  const newCourse = await request.json();
+export async function POST(request: Request): Promise<Response> {
+
+  const newCourse: Omit<Course, 'id'> = await request.json();
   const fileContents = await fs.readFile(dataFilePath, 'utf8');
-  const data = JSON.parse(fileContents);
+  const data: CoursesData = JSON.parse(fileContents);
   
-  newCourse.id = Date.now().toString(); // Simple ID generation
-  data.courses.push(newCourse);
+  const courseWithId: Course = {
+    ...newCourse,
+    id: Date.now().toString(),
+    students: newCourse.students || [],
+    topics: newCourse.topics || [],
+    attendance: newCourse.attendance || []
+  };
+  
+  data.courses.push(courseWithId);
   
   await fs.writeFile(dataFilePath, JSON.stringify(data, null, 2));
-  return Response.json(newCourse, { status: 201 });
+  return Response.json(courseWithId, { status: 201 });
 }
