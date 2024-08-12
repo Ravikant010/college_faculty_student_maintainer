@@ -93,7 +93,7 @@ const handleSubmit = async (data:ClassData) => {
       <h2>Enrolled Students</h2>
       <div className='flex justify-start'>
       {
-  course && course.students.map(e=><Badge className='mx-2 mt-2'>{e.name}</Badge>)
+  course && course.students.map((e, index)=><Badge className='mx-2 mt-2' key={index}>{e.name}</Badge>)
 }
       </div>
       <div className="bg-white rounded-lg p-6">
