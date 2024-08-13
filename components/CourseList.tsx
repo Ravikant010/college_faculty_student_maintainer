@@ -52,7 +52,7 @@ const router = useRouter()
             {/* <p>Schedule: {course.schedule.time}</p> */}
             {/* <p>Duration: {course.schedule.startDate} to {course.schedule.endDate}</p> */}
             <Button 
-              onClick={() => handleDelete(course.id)}
+              onClick={(e) => {e.preventDefault();handleDelete(course.id)}}
               variant="destructive"
               className="mt-2"
             >
