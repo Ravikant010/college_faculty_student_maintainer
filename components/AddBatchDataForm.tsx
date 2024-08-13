@@ -112,7 +112,7 @@ export default function AddClassDataForm({ courseId, onSubmit }: AddClassDataFor
                 <Input placeholder="student1, student2, student3" {...field} />
               </FormControl>
               <FormDescription>
-                Enter student IDs separated by commas.
+                Enter student Names separated by commas.
               </FormDescription>
               <FormMessage />
             </FormItem>
