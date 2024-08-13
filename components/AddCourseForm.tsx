@@ -1,9 +1,9 @@
-// app/components/AddCourseForm.tsx
 import { useState } from 'react';
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Course } from '@/type';
+import { Textarea } from "@/components/ui/textarea";
 
 interface AddCourseFormProps {
   onAddCourse: (course: Omit<Course, 'id'>) => void;
@@ -11,17 +11,17 @@ interface AddCourseFormProps {
 
 export function AddCourseForm({ onAddCourse }: AddCourseFormProps) {
   const [courseName, setCourseName] = useState('');
-  const [numStudents, setNumStudents] = useState(0);
-  const [numTopics, setNumTopics] = useState(0);
+  const [studentNames, setStudentNames] = useState('');
   const [scheduleTime, setScheduleTime] = useState('');
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const studentList = studentNames.split(',').map(name => name.trim());
     const newCourse: Omit<Course, 'id'> = {
       name: courseName,
-      students: Array(numStudents).fill({}).map((_, index) => ({ id: `s${index + 1}`, name: '' })),
+      students: studentList.map((name, index) => ({ id: `s${index + 1}`, name })),
       topics: [],
       schedule: {
         startDate,
@@ -37,7 +37,7 @@ export function AddCourseForm({ onAddCourse }: AddCourseFormProps) {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <Label htmlFor="courseName">Topic Names</Label>
+        <Label htmlFor="courseName">Course Name</Label>
         <Input 
           id="courseName" 
           value={courseName} 
@@ -46,25 +46,15 @@ export function AddCourseForm({ onAddCourse }: AddCourseFormProps) {
         />
       </div>
       <div>
-        <Label htmlFor="numStudents">Students</Label>
-        <Input 
-          id="numStudents" 
-          type="number" 
-          value={numStudents} 
-          onChange={(e) => setNumStudents(parseInt(e.target.value))} 
+        <Label htmlFor="studentNames">Student Names</Label>
+        <Textarea 
+          id="studentNames" 
+          value={studentNames} 
+          onChange={(e) => setStudentNames(e.target.value)} 
+          placeholder="Enter student names separated by commas"
           required 
         />
       </div>
-      {/* <div>
-        <Label htmlFor="numTopics">Topics</Label>
-        <Input 
-          id="numTopics" 
-          type="number" 
-          value={numTopics} 
-          onChange={(e) => setNumTopics(parseInt(e.target.value))} 
-          required 
-        />
-      </div> */}
       <div>
         <Label htmlFor="scheduleTime">Schedule</Label>
         <Input 

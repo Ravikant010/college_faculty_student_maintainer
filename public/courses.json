@@ -19,7 +19,16 @@
             "python match case, switch , practical"
           ],
           "links": [
-            "zoom link\nhttps://us06web.zoom.us/j/81150015986?pwd=bav7vzBh6yTWMU1iLBH5hbsfsgc7kn.1\n\nrecording link\nhttps://www.transfernow.net/dl/20240812Ff6XhLDw"
+            "zoom link \n https://us06web.zoom.us/j/81150015986?pwd=bav7vzBh6yTWMU1iLBH5hbsfsgc7kn.1\n\nrecording link\nhttps://www.transfernow.net/dl/20240812Ff6XhLDw"
+          ]
+        },
+        {
+          "id": "topic-1723548978098-fxpyl0mj3",
+          "name": [
+            "list in python, indexing in list, methods of list we use in python"
+          ],
+          "links": [
+            "code link \nhttps://email.codesandbox.io/c/eJykzL1y6yAQxfGnEc0de2ABgQuK2-g1NAusrB1bSEH4I3n6FHGTSZVJe-Z_fjn4qM2kBAXlQFvw-uTFHKLWCkymFPvUW2dTBDLKmWilPpnYCw4gwUivtLRWK3_sp15loyhOFJW10BmZ1kw7lhzX55FXweXOjcZbvYa5tW3v9P8Ohg6G710Hw97BgHnhyuV8mKgu2A7P_bK9efGXb-FEI97avFb-wMZrGR_c5hFr43SlcGd6fEUvcSy4UNje27yWf0qKGjZqVDesF6o4U6XOyPOCfD2mdRGVEm9MpY2cQ58ieulN1giOELVzPqkYlYtgrVdTSpKInNipZPopv_ZfUfcAnwEAAP__t-uZ5Q"
           ]
         }
       ],
@@ -30,6 +39,12 @@
         "time": "10:00:11:00"
       },
       "attendance": [
+        {
+          "date": "2024-08-12",
+          "presentStudents": [
+            "abhishek"
+          ]
+        },
         {
           "date": "2024-08-13",
           "presentStudents": [
@@ -68,6 +83,16 @@
           "links": [
             "code_link \n https://email.codesandbox.io/c/eJykzMFu6yAQheGnMZurRAyQgBcssslrWAMM8eja2MLESfv0VdVsqq6qbo_-8yXvgjYZBHmwShvXm7MTo5fOIhAllBDPTp-yzsli3ztUCBGDYK-kMtKBgl4a5Y4qJwcWLIaUU9amMzIuiTYsKSzPIy-Cy86Nhnud_NjaunX60qlrp67fu05dt89xop3qYcbng6bpsNlpzTfxh2vhSAPe27hUfsfGSxke3MYBa-M4kd-ZHl_RCxwKzuTXtzYu5R9Apy9aiupXalRXrP-p4kiVOiNvM_J0jMssKkVemUobOPlzDOikM0mjsoSorXURQgAb1OnkIMcoiciKjUqin_Jr_xW1e_URAAD__4Wamwg"
           ]
+        },
+        {
+          "id": "topic-1723550403147-w88rmh14p",
+          "name": [
+            "logical operator OR and solve practical question and doubts, intro to loop"
+          ],
+          "links": [
+            "code link\nhttps://email.codesandbox.io/c/eJykzMFu6yAQheGnMZurRAyQgBcssslrWAMM8eja2MLESfv0VdVsqq6qbo_-8yXvgjYZBHmwShvXm7MTo5fOIhAllBDPTp-yzsli3ztUCBGDYK-kMtKBgl4a5Y4qJwcWLIaUU9amMzIuiTYsKSzPIy-Cy86Nhnud_NjaunX60qlrp67fu05dt89xop3qYcbng6bpsNlpzTfxh2vhSAPe27hUfsfGSxke3MYBa-M4kd-ZHl_RCxwKzuTXtzYu5R9Apy9aiupXalRXrP-p4kiVOiNvM_J0jMssKkVemUobOPlzDOikM0mjsoSorXURQgAb1OnkIMcoiciKjUqin_Jr_xW1e_URAAD__4Wamwg",
+            "Recording link\nhttps://www.transfernow.net/dl/20240813xIHKFEuA"
+          ]
         }
       ],
       "schedule": {
@@ -78,10 +103,18 @@
       },
       "attendance": [
         {
-          "date": "2024-08-13",
+          "date": "2024-08-12",
           "presentStudents": [
             "nikhil",
             "ankul"
+          ]
+        },
+        {
+          "date": "2024-08-13",
+          "presentStudents": [
+            "nikhil",
+            "ankul",
+            "jai rajputana"
           ]
         }
       ],
@@ -104,6 +137,15 @@
           "links": [
             "no link he has code \n "
           ]
+        },
+        {
+          "id": "topic-1723550890020-e2gzlhvru",
+          "name": [
+            "classes, solved practical qustion in class based on class "
+          ],
+          "links": [
+            "practice question link \nhttps://www.w3resource.com/python-exercises/oop/index.php"
+          ]
         }
       ],
       "schedule": {
@@ -113,6 +155,12 @@
         "time": "12:30:2:00"
       },
       "attendance": [
+        {
+          "date": "2024-08-12s",
+          "presentStudents": [
+            "jaysal"
+          ]
+        },
         {
           "date": "2024-08-13",
           "presentStudents": [
@@ -179,6 +227,46 @@
       },
       "attendance": [],
       "id": "1723490820261"
+    },
+    {
+      "name": "random",
+      "students": [
+        {
+          "id": "s1",
+          "name": "name1"
+        },
+        {
+          "id": "s2",
+          "name": "name2"
+        }
+      ],
+      "topics": [
+        {
+          "id": "topic-1723548457352-h46bpsk9p",
+          "name": [
+            "a, b, c"
+          ],
+          "links": [
+            "\nhttp://localhost:3000/random/1723548434090"
+          ]
+        }
+      ],
+      "schedule": {
+        "startDate": "2024-08-13",
+        "endDate": "2024-09-11",
+        "days": [],
+        "time": "6:00:7:00"
+      },
+      "attendance": [
+        {
+          "date": "2024-08-13",
+          "presentStudents": [
+            "name1",
+            "name2"
+          ]
+        }
+      ],
+      "id": "1723548434090"
     }
   ]
 }

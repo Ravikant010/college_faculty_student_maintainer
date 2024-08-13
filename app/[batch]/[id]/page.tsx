@@ -13,7 +13,7 @@ import { Badge } from "@/components/ui/badge"
 
 type Props = {}
 interface ClassData {
-  date: Date;
+  date: string;
   presentStudents: string;
   topicName: string;
   topicLinks: string;
@@ -93,7 +93,7 @@ const handleSubmit = async (data:ClassData) => {
       <h2>Enrolled Students</h2>
       <div className='flex justify-start'>
       {
-  course && course.students.map((e, index)=><Badge className='mx-2 mt-2' key={index}>{e.name}</Badge>)
+  course && course.students.map((e, index)=><Badge className='mx-2 mt-2' key={index}>{e.id + "-" +e.name}</Badge>)
 }
       </div>
       <div className="bg-white rounded-lg p-6">

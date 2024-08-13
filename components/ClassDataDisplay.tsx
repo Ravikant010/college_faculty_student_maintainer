@@ -36,8 +36,8 @@ const ClassDataDisplay: React.FC<ClassDataDisplayProps> = ({ course }) => {
   
     // Return extracted label and URL or default values
     return {
-      label: matches ? matches[1].trim() : 'no link he has code and come offline',
-      url: matches ? matches[2] : '',
+      label: matches ? matches[1].trim() : 'NO LINK AVAILABLE FOR THIS CLASS',
+      url: matches ? ` ${matches[2]}` : '',
     };
   }
   
@@ -68,25 +68,28 @@ const ClassDataDisplay: React.FC<ClassDataDisplayProps> = ({ course }) => {
           <h5 className="text-md font-semibold">Total Students Present on Class Days</h5>
           <p>{totalStudentsPresentOnClassDays}</p>
         </div> */}
-            <div>
-              <h5 className="text-md font-semibold">Topics</h5>
-              {course.topics.map((topic) => (
-                <div key={topic.id}>
-                  <p>Topic: {topic.name.join(', ')}</p>
-                  <ul className="pl-5 list-none whitespace-pre-wrap">
-                 
-                {topic.links.map((link, index) => (
+    <div>
+    <h5 className="text-md font-semibold mt-2">Topics</h5>
+      <p className='ml-4 mt-1s'>{course.topics[index].name}</p>
+      </div>
+
+
+
+     <div>
+              <h5 className="text-md font-semibold">Links</h5>
+              <div className='whitespace-pre-wrap list-none'>
+              {course.topics[index].links.map((link, index) => (
                   <li key={index} className="break-words">
 {extractLabelAndURL(link).label}
+<br/>
                     <a href={extractLabelAndURL(link).url} className="text-blue-500 underline">
                       {extractLabelAndURL(link).url}
                     </a>
+                    <br/>
                   </li>
                 ))}
-              </ul>
                 </div>
-              ))}
-            </div>
+            </div> 
           </div>
         ))}
       </div>

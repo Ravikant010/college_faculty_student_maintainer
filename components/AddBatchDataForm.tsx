@@ -28,7 +28,7 @@ interface AddClassDataFormProps {
 }
 
 interface ClassData {
-  date: Date;
+  date: string;
   presentStudents: string;
   topicName: string;
   topicLinks: string;
@@ -37,7 +37,7 @@ interface ClassData {
 export default function AddClassDataForm({ courseId, onSubmit }: AddClassDataFormProps) {
   const form = useForm<ClassData>({
     defaultValues: {
-      date: new Date(),
+      date: format(new Date(), 'yyyy-MM-dd'),
       presentStudents: '',
       topicName: '',
       topicLinks: '',
@@ -52,7 +52,7 @@ export default function AddClassDataForm({ courseId, onSubmit }: AddClassDataFor
       topicName: data.topicName,
       topicLinks: data.topicLinks.split(',').map(s => s.trim()),
     };
-
+//@ts-ignore
     onSubmit(formattedData);
     form.reset();
   };
@@ -88,6 +88,7 @@ export default function AddClassDataForm({ courseId, onSubmit }: AddClassDataFor
                 <PopoverContent className="w-auto p-0" align="start">
                   <Calendar
                     mode="single"
+                    //@ts-ignore
                     selected={field.value}
                     onSelect={field.onChange}
                     disabled={(date) =>
