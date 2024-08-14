@@ -64,7 +64,6 @@ console.log(params)
 
 useEffect(()=>{
     handleFetchBatch()
-  
 },[])
 const handleSubmit = async (data:ClassData) => {
   try {
