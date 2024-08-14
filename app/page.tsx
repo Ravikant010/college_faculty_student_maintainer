@@ -18,6 +18,7 @@ export default function Page() {
   }
   return (
     <div className="container mx-auto p-4">
+      <h1 className="text-2xl font-bold mb-4">Ravi Reporting TGC</h1>
       <h1 className="text-2xl font-bold mb-4">Courses</h1>
       {typeof window !== 'undefined' && <>
       <CoursesPage />
