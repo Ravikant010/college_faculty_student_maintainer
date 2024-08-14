@@ -21,6 +21,7 @@ export default function Page() {
       <h1 className="text-2xl font-bold mb-4">Courses</h1>
 
       <CoursesPage />
+      {typeof window !== 'undefined' && 
       <div className="fixed bottom-4 left-4 flex items-center space-x-2 w-fit">
         {
           localStorage.getItem("role") == "admin" ? <div>
@@ -49,8 +50,10 @@ export default function Page() {
               </Button>
             </div>
         }
+      
 
       </div>
+}
     </div>
   );
 }
