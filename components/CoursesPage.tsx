@@ -39,7 +39,7 @@ export default function CoursesPage() {
   return (
 <>
       <CourseList key={refreshKey} onCourseDeleted={handleCourseDeleted} />
-      
+      {localStorage.getItem("role") == "admin" &&
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogTrigger asChild>
           <CircularButton/>
@@ -51,6 +51,7 @@ export default function CoursesPage() {
           <AddCourseForm onAddCourse={handleAddCourse} />
         </DialogContent>
       </Dialog>
+}
       </>
   );
 }

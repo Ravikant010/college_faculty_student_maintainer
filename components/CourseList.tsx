@@ -51,13 +51,14 @@ const router = useRouter()
             {/* <p>Topics: {course.topics.length}</p> */}
             {/* <p>Schedule: {course.schedule.time}</p> */}
             {/* <p>Duration: {course.schedule.startDate} to {course.schedule.endDate}</p> */}
-            <Button 
+            {localStorage.getItem("role") == "admin" && <Button 
               onClick={(e) => {e.preventDefault();handleDelete(course.id)}}
               variant="destructive"
               className="mt-2"
             >
               Delete Course
             </Button>
+}
           </CardContent>
         </Card>
       ))}

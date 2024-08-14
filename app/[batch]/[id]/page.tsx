@@ -10,6 +10,7 @@ import { CircularButton } from '@/components/CircleButton';
 import AddClassDataForm from '@/components/AddBatchDataForm';
 import ClassDataDisplay from '@/components/ClassDataDisplay';
 import { Badge } from "@/components/ui/badge"
+import { Input } from '@/components/ui/input';
 
 type Props = {}
 interface ClassData {
@@ -97,8 +98,10 @@ const handleSubmit = async (data:ClassData) => {
 }
       </div>
       <div className="bg-white rounded-lg p-6">
-      {course &&  <ClassDataDisplay course ={course} />}
+      {course &&  <ClassDataDisplay course ={course} courseId={course?.id} />}
+
       </div>
+      {localStorage.getItem("role") == "admin" && 
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogTrigger asChild>
           <CircularButton/>
@@ -110,6 +113,9 @@ const handleSubmit = async (data:ClassData) => {
     <AddClassDataForm courseId={params.id} onSubmit={handleSubmit}/>
         </DialogContent>
       </Dialog>
+}
+
+
     </div>
   )
 }
