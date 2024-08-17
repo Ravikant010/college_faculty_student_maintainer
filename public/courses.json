@@ -187,6 +187,15 @@
           "links": [
             ""
           ]
+        },
+        {
+          "id": "topic-1723915273580-b3a3b7t6p",
+          "name": [
+            "oop concept , class, super class, derived class, inheritance, multiple inheritance, multi level inhertance"
+          ],
+          "links": [
+            "code in office computer"
+          ]
         }
       ],
       "schedule": {
@@ -212,6 +221,12 @@
           "date": "2024-08-14",
           "presentStudents": [
             "absent"
+          ]
+        },
+        {
+          "date": "2024-08-17",
+          "presentStudents": [
+            "jaysal"
           ]
         }
       ],
