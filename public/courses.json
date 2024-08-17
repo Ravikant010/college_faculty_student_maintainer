@@ -216,6 +216,133 @@
         }
       ],
       "id": "1723489805872"
+    },
+    {
+      "name": "HTML CSS Weekend",
+      "students": [
+        {
+          "id": "s1",
+          "name": "Amit"
+        },
+        {
+          "id": "s2",
+          "name": "Sanjog"
+        }
+      ],
+      "topics": [
+        {
+          "id": "topic-1723914462580-d7fdbsbld",
+          "name": [
+            "Flex box, expandable Image project made in class"
+          ],
+          "links": [
+            "project link\n\nhttps://email.codesandbox.io/c/eJyszM2O2yAUQOGnMZtRIn4DLFh049ewLnCxr-pgCzMZN0_fRaJKVVeVZnt09OXgotJFMAzCSuWF1tyzJTh_K8ZY6TWkmIzn0pboQEHmqRiZGAXJpeZOWGH5TdtrUVyjSdF7URxXfNA8bRkPqDlu55U2RvVBHafPtoal9_0Y1I9BjoMc__4GOR6DHAuuZ9zOC5471Ex1vsywru3XZZZPvxj2LUilhBN89mVr9IROW52-qC8TtE5pxfAg_HpNb3qqcMfwZj_-sB8vlrWwY8e2Q_uJDRZsOGg-34HWa9rurGGinbD2iXK4pQiOO50VSIsAylqXRIzCRmmMEyUljoiWHVgz_iu_-39RjyB_BwAA__9q26ad"
+          ]
+        }
+      ],
+      "schedule": {
+        "startDate": "2024-08-17",
+        "endDate": "2024-12-31",
+        "days": [],
+        "time": "10:00:11:00"
+      },
+      "attendance": [
+        {
+          "date": "2024-08-17",
+          "presentStudents": [
+            "Amit"
+          ]
+        }
+      ],
+      "id": "1723914049141"
+    },
+    {
+      "name": "React Weekend",
+      "students": [
+        {
+          "id": "s1",
+          "name": "Sernia"
+        }
+      ],
+      "topics": [
+        {
+          "id": "topic-1723914598911-ekcyxteal",
+          "name": [
+            "eCommerce final project with learning redux  "
+          ],
+          "links": [
+            "where is the code ? \n\nproject is big so code in office computer will be shared once finished"
+          ]
+        }
+      ],
+      "schedule": {
+        "startDate": "2024-05-16",
+        "endDate": "2024-10-25",
+        "days": [],
+        "time": "11:30:12:30"
+      },
+      "attendance": [
+        {
+          "date": "2024-08-17",
+          "presentStudents": [
+            "sernia"
+          ]
+        }
+      ],
+      "id": "1723914154919"
+    },
+    {
+      "name": "JavaScript Weekend",
+      "students": [
+        {
+          "id": "s1",
+          "name": "Jaskaran"
+        }
+      ],
+      "topics": [
+        {
+          "id": "topic-1723914732157-mu7edgzbu",
+          "name": [
+            "array done, started object and made todo list project "
+          ],
+          "links": [
+            "code link\n\nhttps://email.codesandbox.io/c/eJyczMFuqzAQheGnwZurRLYZGFh4cTe8BhrbQ5k02Mg4SdWnr6pmU3XVbo_-80U3-BYWo9gZtO1oADWo1eHYYR806sWzGaj3ywgjm2gtjKAtKnFWW9CDQYPGAJxtx9Bjq9m0uADpBnTIkQ9K0ee3s2Ql6S6V51u5urXW_Wja_42dGjt97xo7HY2dao75dDlO-7otfaf-8kkSeKZbXXORd6qS0_yQus5UqoQru7vw4yt6SnOijd2n8u9yqOJ2rlx2Kq9caOXCDeiXjeR6DnlThYPswqnOEl0fPA16gNiSRSZqEYdgvDfobdcNZglBMzOqg1Pkn_Jz_xV1d_YjAAD__11nkXA"
+          ]
+        }
+      ],
+      "schedule": {
+        "startDate": "2024-08-13",
+        "endDate": "2024-12-31",
+        "days": [],
+        "time": "3:00-4:00"
+      },
+      "attendance": [
+        {
+          "date": "2024-08-17",
+          "presentStudents": [
+            "jaskaran"
+          ]
+        }
+      ],
+      "id": "1723914201540"
+    },
+    {
+      "name": "HTML CSS Sunday Only",
+      "students": [
+        {
+          "id": "s1",
+          "name": "Harish"
+        }
+      ],
+      "topics": [],
+      "schedule": {
+        "startDate": "2024-08-17",
+        "endDate": "2024-12-31",
+        "days": [],
+        "time": "4:00:6:00"
+      },
+      "attendance": [],
+      "id": "1723914256401"
     }
   ]
 }
