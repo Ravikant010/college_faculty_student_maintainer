@@ -3,7 +3,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { Course, CoursesData } from '@/type';
 import { NextResponse } from 'next/server';
-
+import { kv } from '@vercel/kv';
 const dataFilePath = path.join(process.cwd(), 'public', 'courses.json');
 
 export async function GET(): Promise<Response> {
@@ -16,35 +16,26 @@ export async function POST(request: Request): Promise<Response> {
     // Parse the request body
     const newCourse: Omit<Course, 'id'> = await request.json();
 
-    // Read the existing data
-    let data: CoursesData;
-    try {
-      const fileContents = await fs.readFile(dataFilePath, 'utf8');
-      data = JSON.parse(fileContents);
-    } catch (error) {
-      console.error('Error reading or parsing data file:', error);
-      return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
-    }
+    // Generate a new ID
+    const id = Date.now().toString();
 
     // Create the new course object
     const courseWithId: Course = {
       ...newCourse,
-      id: Date.now().toString(),
+      id,
       students: newCourse.students || [],
       topics: newCourse.topics || [],
       attendance: newCourse.attendance || []
     };
 
-    // Add the new course to the data
-    data.courses.push(courseWithId);
+    // Get existing courses
+    let courses: Course[] = await kv.get('courses') || [];
 
-    // Write the updated data back to the file
-    try {
-      await fs.writeFile(dataFilePath, JSON.stringify(data, null, 2));
-    } catch (error) {
-      console.error('Error writing data file:', error);
-      return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
-    }
+    // Add the new course
+    courses.push(courseWithId);
+
+    // Save the updated courses
+    await kv.set('courses', courses);
 
     // Return the newly created course
     return NextResponse.json(courseWithId, { status: 201 });
