@@ -196,6 +196,15 @@
           "links": [
             "code in office computer"
           ]
+        },
+        {
+          "id": "topic-1724046638587-q93ezlcjg",
+          "name": [
+            " encapsulation, polymorphism, data abstraction in class, abstract classes"
+          ],
+          "links": [
+            ""
+          ]
         }
       ],
       "schedule": {
@@ -228,6 +237,12 @@
           "presentStudents": [
             "jaysal"
           ]
+        },
+        {
+          "date": "2024-08-18",
+          "presentStudents": [
+            "jaysal"
+          ]
         }
       ],
       "id": "1723489805872"
@@ -253,6 +268,15 @@
           "links": [
             "project link\n\nhttps://email.codesandbox.io/c/eJyszM2O2yAUQOGnMZtRIn4DLFh049ewLnCxr-pgCzMZN0_fRaJKVVeVZnt09OXgotJFMAzCSuWF1tyzJTh_K8ZY6TWkmIzn0pboQEHmqRiZGAXJpeZOWGH5TdtrUVyjSdF7URxXfNA8bRkPqDlu55U2RvVBHafPtoal9_0Y1I9BjoMc__4GOR6DHAuuZ9zOC5471Ex1vsywru3XZZZPvxj2LUilhBN89mVr9IROW52-qC8TtE5pxfAg_HpNb3qqcMfwZj_-sB8vlrWwY8e2Q_uJDRZsOGg-34HWa9rurGGinbD2iXK4pQiOO50VSIsAylqXRIzCRmmMEyUljoiWHVgz_iu_-39RjyB_BwAA__9q26ad"
           ]
+        },
+        {
+          "id": "topic-1724046423214-1w9sb6mdg",
+          "name": [
+            "flex box complete with project, grid in css intro"
+          ],
+          "links": [
+            ""
+          ]
         }
       ],
       "schedule": {
@@ -264,6 +288,12 @@
       "attendance": [
         {
           "date": "2024-08-17",
+          "presentStudents": [
+            "Amit"
+          ]
+        },
+        {
+          "date": "2024-08-18",
           "presentStudents": [
             "Amit"
           ]
@@ -288,6 +318,15 @@
           "links": [
             "where is the code ? \n\nproject is big so code in office computer will be shared once finished"
           ]
+        },
+        {
+          "id": "topic-1724046485298-trpsgvmvn",
+          "name": [
+            "redux, store, slice, reducer, dispatch"
+          ],
+          "links": [
+            "code\n\nin vs code"
+          ]
         }
       ],
       "schedule": {
@@ -299,6 +338,12 @@
       "attendance": [
         {
           "date": "2024-08-17",
+          "presentStudents": [
+            "sernia"
+          ]
+        },
+        {
+          "date": "2024-08-18",
           "presentStudents": [
             "sernia"
           ]
@@ -323,6 +368,15 @@
           "links": [
             "code link\n\nhttps://email.codesandbox.io/c/eJyczMFuqzAQheGnwZurRLYZGFh4cTe8BhrbQ5k02Mg4SdWnr6pmU3XVbo_-80U3-BYWo9gZtO1oADWo1eHYYR806sWzGaj3ywgjm2gtjKAtKnFWW9CDQYPGAJxtx9Bjq9m0uADpBnTIkQ9K0ee3s2Ql6S6V51u5urXW_Wja_42dGjt97xo7HY2dao75dDlO-7otfaf-8kkSeKZbXXORd6qS0_yQus5UqoQru7vw4yt6SnOijd2n8u9yqOJ2rlx2Kq9caOXCDeiXjeR6DnlThYPswqnOEl0fPA16gNiSRSZqEYdgvDfobdcNZglBMzOqg1Pkn_Jz_xV1d_YjAAD__11nkXA"
           ]
+        },
+        {
+          "id": "topic-1724046552438-zhe9mt1e3",
+          "name": [
+            "object methods, assign, create, hasOwn, is, groupBy"
+          ],
+          "links": [
+            "in jaskaran laptop"
+          ]
         }
       ],
       "schedule": {
@@ -336,6 +390,12 @@
           "date": "2024-08-17",
           "presentStudents": [
             "jaskaran"
+          ]
+        },
+        {
+          "date": "2024-08-18",
+          "presentStudents": [
+            "jskaran"
           ]
         }
       ],
