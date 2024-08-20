@@ -39,6 +39,15 @@
           "links": [
             ""
           ]
+        },
+        {
+          "id": "topic-1724175630931-74koexgyc",
+          "name": [
+            "tuple, set, list, "
+          ],
+          "links": [
+            ""
+          ]
         }
       ],
       "schedule": {
@@ -65,6 +74,13 @@
           "presentStudents": [
             "shubham rawat",
             "abhishek"
+          ]
+        },
+        {
+          "date": "2024-08-20",
+          "presentStudents": [
+            "abhishek",
+            "shubham rawat"
           ]
         }
       ],
@@ -118,6 +134,15 @@
           "links": [
             ""
           ]
+        },
+        {
+          "id": "topic-1724175817685-7kl61sq5v",
+          "name": [
+            "loop, while loop, for loop, practical question in class as hw"
+          ],
+          "links": [
+            "code link\n\n https://email.codesandbox.io/c/eJykzMFu6yAQheGnMZurRAyQgBcssslrWAMM8eja2MLESfv0VdVsqq6qbo_-8yXvgjYZBHmwShvXm7MTo5fOIhAllBDPTp-yzsli3ztUCBGDYK-kMtKBgl4a5Y4qJwcWLIaUU9amMzIuiTYsKSzPIy-Cy86Nhnud_NjaunX60qlrp67fu05dt89xop3qYcbng6bpsNlpzTfxh2vhSAPe27hUfsfGSxke3MYBa-M4kd-ZHl_RCxwKzuTXtzYu5R9Apy9aiupXalRXrP-p4kiVOiNvM_J0jMssKkVemUobOPlzDOikM0mjsoSorXURQgAb1OnkIMcoiciKjUqin_Jr_xW1e_URAAD__4Wamwg"
+          ]
         }
       ],
       "schedule": {
@@ -147,6 +172,14 @@
           "presentStudents": [
             "nikhil",
             "ankul"
+          ]
+        },
+        {
+          "date": "2024-08-20",
+          "presentStudents": [
+            "nikhil",
+            "ankul",
+            "jai rajputana"
           ]
         }
       ],
@@ -205,6 +238,15 @@
           "links": [
             ""
           ]
+        },
+        {
+          "id": "topic-1724175911774-s4wu757s4",
+          "name": [
+            "abstract classes"
+          ],
+          "links": [
+            ""
+          ]
         }
       ],
       "schedule": {
@@ -240,6 +282,12 @@
         },
         {
           "date": "2024-08-18",
+          "presentStudents": [
+            "jaysal"
+          ]
+        },
+        {
+          "date": "2024-08-20",
           "presentStudents": [
             "jaysal"
           ]
