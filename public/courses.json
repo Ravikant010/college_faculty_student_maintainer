@@ -48,6 +48,15 @@
           "links": [
             ""
           ]
+        },
+        {
+          "id": "topic-1724253047788-saouc5ge7",
+          "name": [
+            "tuple methods, sets methods(union, intersection, setdifferences, symmetric differnce"
+          ],
+          "links": [
+            "code link\n\nhttps://email.codesandbox.io/c/eJyczLFy6yAQheGnEZ09sCABBcVt9BqaBVZXO5GQgrCd5OlTxE0mVdKe-c-Xg4vazEpQUBYM9FoqL5YwWNDOqmgNDNnPbvBaYj-T1qB7H7PgABKMdKBUr6Ty1-ytIw-9NSk5m2JnZNoznVhy3N-uvAsud2403eoaltaOs9P_Ohg7GL93HYxnB-PrjaldFl7Xi7HpvWzij7fCiSa8tWWv_IGN9zI9uC0T1sZppXBnenxFT2wquFFQEjdRw0GN6oH1hSouVKkz8v-GvF7TvolKiQ-m0ibOYUgRnXQmawRLiNpal1SMykboe6fmlCQRWXFSyfRTfu6_ou4BPgMAAP__haWSuw"
+          ]
         }
       ],
       "schedule": {
@@ -78,6 +87,13 @@
         },
         {
           "date": "2024-08-20",
+          "presentStudents": [
+            "abhishek",
+            "shubham rawat"
+          ]
+        },
+        {
+          "date": "2024-08-21",
           "presentStudents": [
             "abhishek",
             "shubham rawat"
@@ -143,6 +159,15 @@
           "links": [
             "code link\n\n https://email.codesandbox.io/c/eJykzMFu6yAQheGnMZurRAyQgBcssslrWAMM8eja2MLESfv0VdVsqq6qbo_-8yXvgjYZBHmwShvXm7MTo5fOIhAllBDPTp-yzsli3ztUCBGDYK-kMtKBgl4a5Y4qJwcWLIaUU9amMzIuiTYsKSzPIy-Cy86Nhnud_NjaunX60qlrp67fu05dt89xop3qYcbng6bpsNlpzTfxh2vhSAPe27hUfsfGSxke3MYBa-M4kd-ZHl_RCxwKzuTXtzYu5R9Apy9aiupXalRXrP-p4kiVOiNvM_J0jMssKkVemUobOPlzDOikM0mjsoSorXURQgAb1OnkIMcoiciKjUqin_Jr_xW1e_URAAD__4Wamwg"
           ]
+        },
+        {
+          "id": "topic-1724253095067-xoe1vfr0i",
+          "name": [
+            "repeat last topic, doubts clear"
+          ],
+          "links": [
+            ""
+          ]
         }
       ],
       "schedule": {
@@ -180,6 +205,12 @@
             "nikhil",
             "ankul",
             "jai rajputana"
+          ]
+        },
+        {
+          "date": "2024-08-21",
+          "presentStudents": [
+            "ankul"
           ]
         }
       ],
@@ -247,6 +278,15 @@
           "links": [
             ""
           ]
+        },
+        {
+          "id": "topic-1724253127318-pfwfepvnx",
+          "name": [
+            "abstract classes , methods (course finished)"
+          ],
+          "links": [
+            ""
+          ]
         }
       ],
       "schedule": {
@@ -288,6 +328,12 @@
         },
         {
           "date": "2024-08-20",
+          "presentStudents": [
+            "jaysal"
+          ]
+        },
+        {
+          "date": "2024-08-21",
           "presentStudents": [
             "jaysal"
           ]
@@ -466,6 +512,41 @@
       },
       "attendance": [],
       "id": "1723914256401"
+    },
+    {
+      "name": "Python mon to thur 1pm",
+      "students": [
+        {
+          "id": "s1",
+          "name": "gracy"
+        }
+      ],
+      "topics": [
+        {
+          "id": "topic-1724253322303-fiia113pq",
+          "name": [
+            "variables, print function , data types"
+          ],
+          "links": [
+            "code link\n\nhttps://email.codesandbox.io/c/eJykzrGO4yAQxvGngS4RA9g4BUUav4Y1wDgexQEHk-Tunv602jSrrVbbjv7z05f8EIydQZIHp63ujFFGLt6q2RE6skSzcaTApr47EYYhQN8jSPZaaasGDdBBp9QRwcUwxxStwpROIKyKJdGOOYXy58hFcn5yo-lRV7-0tu3CnIUehR6_dkKPu9Djq-REdX6sh78lY1sO6_V-uWv5q-fMkSZ8tKVU_oeNS55e3JYJa-O4kn8yvT6jNzllvJEHYc5Kyeo3alQ3rFequFAlYdXlhrweY7nJSpE3ptwmTr6PAQc12GRQO0I0zg0RQgAXdNcNMMeoiMjJnT6mfpPf9x9RT6__BwAA__9nVpns"
+          ]
+        }
+      ],
+      "schedule": {
+        "startDate": "2024-08-20",
+        "endDate": "2024-12-31",
+        "days": [],
+        "time": "1:00:2:00"
+      },
+      "attendance": [
+        {
+          "date": "2024-08-21",
+          "presentStudents": [
+            "gracy"
+          ]
+        }
+      ],
+      "id": "1724253253926"
     }
   ]
 }
